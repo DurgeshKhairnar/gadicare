@@ -43,7 +43,7 @@ class _RegistrationState extends State<Registration> {
               const SizedBox(height: 20,),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/navigation');
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Navigation()));
                 },
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(double.infinity, 50),
